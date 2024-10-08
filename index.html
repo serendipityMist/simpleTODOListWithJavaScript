@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TO-DO LIST</h1>
+    <div class="todoContainer">
+        <div class="inputHolder">
+        <input type="text" class="todoInput" placeholder="Enter your task here">&nbsp;<button class="add" onclick="addButton()">Add</button>
+        <div class="selectContainer">   
+        <input type="radio" name="type" id="type1" > <label for="type1" class="l1">Casual</label>
+            <input type="radio" name="type" id="type2"> <label for="type2"  class="l2"> Urgent</label>
+        </div>
+        </div>
+        
+        <h2 class="oneh2">Your Taks</h2> 
+        <hr>
+        <br>
+        <h2>Casual Tasks</h2>
+        <div class="tasksHolder" id="casual">
+            <div>
+                <p>Learn to Code</p> &nbsp;
+                <button>remove</button>
+            </div>
+         
+     
+        </div>
+        <br>
+        <br>
+        <h2 class="oneh2">Urgent Tasks</h2>
+        <div class="tasksHolder" id="urgent"> 
+            <div>
+                <p>Learn to Code</p> &nbsp;<button>remove</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
